@@ -1,0 +1,22 @@
+{
+  "name": "types-sugarcube",
+  "version": "2.31.1",
+  "description": "TypeScript definitions for the SugarCube Twine format",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ezsh/types-sugarcube.git"
+  },
+  "main": "",
+  "author": "ezsh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ezsh/types-sugarcube/issues"
+  },
+  "homepage": "https://github.com/ezsh/types-sugarcube",
+  "dependencies": {
+    "@types/jquery": "latest"
+  },
+  "scripts": {},
+  "typeScriptVersion": "3.0",
+  "types": "@types/index.d.ts"
+}
