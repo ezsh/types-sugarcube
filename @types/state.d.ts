@@ -38,7 +38,7 @@ export interface State {
 	 * Returns the current temporary variables.
 	 * @since 2.13.0
 	 */
-	temporary: any;
+	temporary: {[x: string]: any};;
 	/**
 	 * Returns the number of moments within the full in-play history (past + future).
 	 * @since 2.0.0
@@ -61,7 +61,7 @@ export interface State {
 	 * Returns the variables from the active (present) moment.
 	 * @since 2.0.0
 	 */
-	variables: any;
+	variables: {[x: string]: any};;
 	/**
 	 * Returns the value of the story or temporary variable by the given name.
 	 * @param varName The name of the story or temporary variable, including its sigil—e.g. $charName.
