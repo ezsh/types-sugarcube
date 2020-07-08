@@ -14,8 +14,9 @@
   },
   "homepage": "https://github.com/ezsh/types-sugarcube",
   "dependencies": {
-    "@types/jquery": "latest"
+    "@types/jquery": "*"
   },
+  "bundleDependencies": false,
   "scripts": {},
   "typeScriptVersion": "3.0",
   "types": "@types/index.d.ts"
