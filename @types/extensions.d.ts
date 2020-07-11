@@ -222,14 +222,14 @@ declare global {
 		 * @param needle
 		 * @deprecated in favor of <Array>.includesAll().
 		 */
-		containsAll(...needle): boolean;
+		containsAll(...needle: any[]): boolean;
 
 		/**
 		 *
 		 * @param needle
 		 * @deprecated in favor of <Array>.includesAny().
 		 */
-		containsAny(...needle): boolean;
+		containsAny(...needle: any[]): boolean;
 
 		/**
 		 *

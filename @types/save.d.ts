@@ -2,7 +2,7 @@ export interface SavedMoment {
 	/** The title of the associated passage. */
 	title: string;
 	/** The current variable store object, which contains sigil - less name ⇒ value pairs(e.g.$foo exists as foo). */
-	variables: any;
+	variables: {[x: string]: any};
 	/** The current pull count of SugarCube's seedable PRNG, exists only if enabled. */
 	pull?: number;
 }

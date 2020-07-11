@@ -1,6 +1,6 @@
 declare interface StoryMoment {
 	title: string;
-	variables: any;
+	variable: {[x: string]: any};
 }
 
 export interface State {

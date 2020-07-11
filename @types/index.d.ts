@@ -1,3 +1,5 @@
+export as namespace SugarCubeLib;
+
 export * from "./extensions";
 export * from "./functions";
 export * from "./globals";

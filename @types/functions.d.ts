@@ -22,7 +22,7 @@ declare global {
 	 * $foo.id -> Returns: 1
 	 * $bar.id -> Returns: 5
 	 */
-	function clone(original: any): any;
+	function clone<T>(original: T): T;
 
 	/**
 	 * Returns a random value from its given arguments.

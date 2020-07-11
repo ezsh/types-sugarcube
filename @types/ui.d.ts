@@ -1,3 +1,10 @@
+export interface DialogOptions {
+	/** Top y-coordinate of the dialog (default: 50; in pixels, but without the unit). */
+	top?: number;
+	/** Opacity of the overlay (default: 0.8). */
+	opacity?: number;
+}
+
 export interface Dialog {
 	/**
 	 * Adds WAI-ARIA-compatible mouse/keyboard event handlers to the target element(s) which open the dialog when
@@ -19,7 +26,7 @@ export interface Dialog {
 	 *	 Dialog.wiki(Story.get("MyDialogContents").processText());
 	 * });
 	 */
-	addClickHandler(targets: HTMLElement | string, options?: object,
+	addClickHandler(targets: HTMLElement | string, options?: DialogOptions,
 		tartFn?: () => void, doneFn?: () => void, closeFn?: () => void): void;
 
 	/**
@@ -75,7 +82,7 @@ export interface Dialog {
 	 * @param closeFn The function to execute whenever the dialog is closed.
 	 * @since 2.0.0
 	 */
-	open(options?: object, closeFn?: () => void): Dialog;
+	open(options?: DialogOptions, closeFn?: () => void): Dialog;
 
 	/**
 	 * Prepares the dialog for use and returns a reference to its content area.
@@ -231,7 +238,7 @@ export interface UI {
 	 * @param closeFn The function to execute whenever the dialog is closed.
 	 * @since 2.0.0
 	 */
-	alert(message: string, options?: object, closeFn?: () => void): void;
+	alert(message: string, options?: DialogOptions, closeFn?: () => void): void;
 
 	/**
 	 * Opens the built-in jump to dialog, which is populated via the bookmark tag.
@@ -239,14 +246,14 @@ export interface UI {
 	 * @param closeFn The function to execute whenever the dialog is closed.
 	 * @since 2.0.0
 	 */
-	jumpto(options: object, closeFn?: () => void): void;
+	jumpto(options: DialogOptions, closeFn?: () => void): void;
 
 	/**
 	 * Opens the built-in restart dialog, prompting the player to restart the story.
 	 * @param options The options object. @see Dialog.addClickHandler() for more information.
 	 * @since 2.0.0
 	 */
-	restart(options?: any): void;
+	restart(options?: DialogOptions): void;
 
 	/**
 	 * Opens the built-in saves dialog.
@@ -254,7 +261,7 @@ export interface UI {
 	 * @param closeFn The function to execute whenever the dialog is closed.
 	 * @since 2.0.0
 	 */
-	saves(options: object, closeFn?: () => void): void;
+	saves(options: DialogOptions, closeFn?: () => void): void;
 
 	/**
 	 * Opens the built-in settings dialog, which is populated from the Setting API.
@@ -263,7 +270,7 @@ export interface UI {
 	 * @sine 2.0.0
 	 *
 	 */
-	settings(options: object, closeFn?: () => void): void;
+	settings(options: DialogOptions, closeFn?: () => void): void;
 
 	/**
 	 * Opens the built-in share dialog, which is populated from the StoryShare passage.
@@ -271,7 +278,7 @@ export interface UI {
 	 * @param closeFn The function to execute whenever the dialog is closed.
 	 * @since 2.0.0
 	 */
-	share(options: object, closeFn?: () => void): void;
+	share(options: DialogOptions, closeFn?: () => void): void;
 }
 
 export interface UIBar {
