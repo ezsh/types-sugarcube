@@ -9,6 +9,7 @@ import {ISugarCube} from "./sugarcube";
 import {TemplateAPI} from "./template";
 import {Dialog, Fullscreen, LoadScreen} from "./ui";
 import {Wikifier} from "./wiki";
+import {SugarCubeSetupObject, SugarCubeSettingVariables} from "./userdata";
 
 declare global {
 
@@ -58,7 +59,7 @@ declare global {
 	 * does not change and should not be stored within story variables, which would make it part of the history.
 	 * @since 2.0.0
 	 */
-	const setup: {[x: string]: any};
+	const setup: SugarCubeSetupObject;
 	/**
 	 * A prototype-less generic object whose properties and values are defined by the Setting.addToggle(),
 	 * Setting.addList(), and Setting.addRange() methods.
@@ -68,7 +69,7 @@ declare global {
 	 * Setting.save() after having done so.
 	 * @since 2.0.0
 	 */
-	const settings: {[x: string]: any};
+	const settings: SugarCubeSettingVariables;
 
 	const Fullscreen: Fullscreen;
 	const LoadScreen: LoadScreen;

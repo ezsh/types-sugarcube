@@ -8,6 +8,7 @@ import {State} from "./state";
 import {Story} from "./story";
 import {Dialog, Fullscreen, UI} from "./ui";
 import {Wikifier} from "./wiki";
+import {SugarCubeSetupObject, SugarCubeSettingVariables} from "./userdata";
 
 export interface ISugarCube {
 	Browser: {
@@ -52,7 +53,7 @@ export interface ISugarCube {
 	 * Player settings object, set up by the author/developer. See Setting API for more information.
 	 * @since 2.0.0
 	 */
-	settings: {[x: string]: any};
+	settings: SugarCubeSettingVariables;
 	/**
 	 * Object that authors/developers may use to set up various bits of static data.
 	 *
@@ -60,7 +61,7 @@ export interface ISugarCube {
 	 * within story variables, which would make it part of the history.
 	 * @since 2.0.0
 	 * */
-	setup: {[x: string]: any};
+	setup: SugarCubeSetupObject;
 	storage: any;
 	session: any;
 	version: {

@@ -17,4 +17,5 @@ export * from "./story";
 export * from "./sugarcube";
 export * from "./template";
 export * from "./ui";
+export * from "./userdata";
 export * from "./wiki";
