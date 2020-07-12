@@ -19,5 +19,5 @@
   "bundleDependencies": false,
   "scripts": {},
   "typeScriptVersion": "3.0",
-  "types": "@types/index.d.ts"
+  "types": "types-sugarcube/index.d.ts"
 }
