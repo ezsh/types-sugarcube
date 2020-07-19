@@ -4,11 +4,12 @@ import {Engine} from "./engine";
 import {Macro} from "./macro";
 import {Save} from "./save";
 import {ScriptingAPI} from "./scripting";
+import {Settings} from "./settings";
 import {State} from "./state";
 import {Story} from "./story";
 import {Dialog, Fullscreen, UI} from "./ui";
+import {SugarCubeSettingVariables, SugarCubeSetupObject} from "./userdata";
 import {Wikifier} from "./wiki";
-import {SugarCubeSetupObject, SugarCubeSettingVariables} from "./userdata";
 
 export interface ISugarCube {
 	Browser: {
@@ -44,6 +45,7 @@ export interface ISugarCube {
 	Macro: Macro;
 	Save: Save;
 	Scripting: ScriptingAPI;
+	Setting: Settings;
 	SimpleAudio: SimpleAudio;
 	State: State;
 	Story: Story;

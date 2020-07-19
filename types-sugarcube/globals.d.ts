@@ -74,7 +74,7 @@ declare global {
 	const Fullscreen: Fullscreen;
 	const LoadScreen: LoadScreen;
 
-	const Settings: Settings;
+	const Setting: Settings;
 	const State: State;
 	const Story: Story;
 	const Wikifier: Wikifier;
